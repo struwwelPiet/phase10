@@ -1,0 +1,60 @@
+* {
+    font-family: 'Krona One', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#name {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+input[type=radio] {
+    display: none;
+}
+
+.colors > label {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.colors > input:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: white;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.welcome-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.welcome-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 10px
+}
+
+
+#phases input:checked + label {
+    background: #eee;
+}
